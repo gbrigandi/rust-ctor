@@ -181,7 +181,7 @@ crate::declare_macro!(
                         static __dso_handle: *const u8;
                         fn __cxa_atexit(cb: unsafe extern fn(_: *const u8), arg: *const u8, dso_handle: *const u8);
                     }
-                    __cxa_atexit(cb, core::ptr::null(), __dso_handle);
+                    __cxa_atexit(cb, ::core::ptr::null(), __dso_handle);
                 }
 
             }
